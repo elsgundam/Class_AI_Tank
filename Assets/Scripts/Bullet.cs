@@ -20,15 +20,16 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.layer == LayerMask.NameToLayer("Enemy")&&gameObject.layer == LayerMask.NameToLayer("Hero"))
+        
+        if( other.gameObject.layer == LayerMask.NameToLayer("Enemy")&&  gameObject.layer ==  LayerMask.NameToLayer("Hero"))
         {
             HeroMove.gEnemyHp -= 5;
             Destroy(gameObject,0.0f);
         }
 
-        if(other.gameObject.layer == LayerMask.NameToLayer("Hero") && gameObject.layer == LayerMask.NameToLayer("Enemy"))
+        if( other.gameObject.layer == LayerMask.NameToLayer("Hero") &&   gameObject.layer == LayerMask.NameToLayer("Enemy"))
         {
-            HeroMove.gHeroHp -=5;
+            HeroMove.gHeroHp -= 5;
             Destroy(gameObject,0.0f);
         }
 

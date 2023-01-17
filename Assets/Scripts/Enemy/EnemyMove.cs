@@ -7,7 +7,7 @@ public class EnemyMove : MonoBehaviour
     public GameObject mPrefab_Bullet;
     float mDirR = 180.0f;
     Vector3 mDir;
-    float mSpeed;
+    [SerializeField]float mSpeed = 1f;
     int nTime = 0;
 
     public bool MoveFollowTarget()
@@ -19,7 +19,7 @@ public class EnemyMove : MonoBehaviour
             Quaternion tRot = Quaternion.LookRotation(mDir, new Vector3(0, 1, 0));
             mDirR = tRot.eulerAngles.y;
             gameObject.transform.localRotation = tRot;
-            gameObject.transform.position += mDir * mSpeed;
+            gameObject.transform.position += mDir * mSpeed *Time.deltaTime ;
             return true;
         }
         return false;
@@ -33,7 +33,7 @@ public class EnemyMove : MonoBehaviour
             Quaternion tRot = Quaternion.LookRotation(mDir, new Vector3(0, 1, 0));
             mDirR = tRot.eulerAngles.y;
             gameObject.transform.localRotation = tRot;
-            gameObject.transform.position -= mDir * mSpeed;
+            gameObject.transform.position -= mDir * mSpeed * Time.deltaTime;
             return true;
         }
         return false;

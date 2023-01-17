@@ -415,7 +415,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63805a4cf846174448623aaa26376fdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mPrefab_Bullet: {fileID: 0}
+  mPrefab_Bullet: {fileID: 1946988184589527953, guid: 40d883bf1a4ee1745b25142b1919892b, type: 3}
+  mSpeed: 1
+--- !u!114 &1973545141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1973545137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3076ae4218e0f3419babb31d4fd12f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2112621379
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -471,14 +484,38 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 8aa532a1002728c409882b7ecc62498a, type: 2}
+    - target: {fileID: 1740229206612005911, guid: 1eacaaca2f2294a4fb94cc2dd7d472f5, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2068856280120599544, guid: 1eacaaca2f2294a4fb94cc2dd7d472f5, type: 3}
       propertyPath: m_Name
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 2068856280120599544, guid: 1eacaaca2f2294a4fb94cc2dd7d472f5, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4623733089652018238, guid: 1eacaaca2f2294a4fb94cc2dd7d472f5, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4678486587165487067, guid: 1eacaaca2f2294a4fb94cc2dd7d472f5, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392715397253517269, guid: 1eacaaca2f2294a4fb94cc2dd7d472f5, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5825833920998645975, guid: 1eacaaca2f2294a4fb94cc2dd7d472f5, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 559ce18c47297a64489e1a85f24f2951, type: 2}
+    - target: {fileID: 5889874065577150336, guid: 1eacaaca2f2294a4fb94cc2dd7d472f5, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8123522312148941239, guid: 1eacaaca2f2294a4fb94cc2dd7d472f5, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -540,14 +577,34 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 68e99f1d0af79f74c9539033a60bf93e, type: 2}
+    - target: {fileID: 1740229206612005911, guid: 1eacaaca2f2294a4fb94cc2dd7d472f5, type: 3}
+      propertyPath: m_Layer
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 2068856280120599544, guid: 1eacaaca2f2294a4fb94cc2dd7d472f5, type: 3}
       propertyPath: m_Name
       value: Hero
+      objectReference: {fileID: 0}
+    - target: {fileID: 4623733089652018238, guid: 1eacaaca2f2294a4fb94cc2dd7d472f5, type: 3}
+      propertyPath: m_Layer
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4678486587165487067, guid: 1eacaaca2f2294a4fb94cc2dd7d472f5, type: 3}
+      propertyPath: m_Layer
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392715397253517269, guid: 1eacaaca2f2294a4fb94cc2dd7d472f5, type: 3}
+      propertyPath: m_Layer
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 5825833920998645975, guid: 1eacaaca2f2294a4fb94cc2dd7d472f5, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 559ce18c47297a64489e1a85f24f2951, type: 2}
+    - target: {fileID: 5889874065577150336, guid: 1eacaaca2f2294a4fb94cc2dd7d472f5, type: 3}
+      propertyPath: m_Layer
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 8123522312148941239, guid: 1eacaaca2f2294a4fb94cc2dd7d472f5, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
